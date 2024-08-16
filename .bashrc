@@ -31,3 +31,10 @@ export LUA_PATH="./?.lua;./?/init.lua;./lua/?/init.lua;;"
 
 # Dotfiles management alias
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# Ctrl+F for fzf directory navigation
+fzf_cd() {
+  cd $(find * -type d | fzf)
+}
+
+bind -x '"\C-f": fzf_cd'

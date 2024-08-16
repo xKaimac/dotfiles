@@ -27,6 +27,7 @@ bindcode 133 exec $menu
 set $monitor1 eDP-2 
 # main monitor
 set $monitor2 DP-11
+set $monitor3 DP-1
 
 # Disable the laptop screen when the lid is closed
 bindswitch --reload --locked lid:on output $monitor1 disable 
