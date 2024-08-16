@@ -38,3 +38,19 @@ fzf_cd() {
 }
 
 bind -x '"\C-f": fzf_cd'
+
+# Ctrl+Alt+Shift to swap from headphones to speakers
+swap_audio_output() {
+  local HEADPHONES="alsa_output.usb-SteelSeries_SteelSeries_Arctis_7-00.stereo-game"
+  local SPEAKERS="alsa_output.usb-DELL_Dell_Speakerphone_SP3022_0-02.iec958-stereo"
+  local CURRENT_SINK=$(pactl get-default-sink)
+  
+  if [ "$CURRENT_SINK" = "$HEADPHONES" ]; then
+    echo "Switching to speakers"
+    pactl set-default-sink "$SPEAKERS"
+  else
+    echo "Switching to headphones"
+    pactl set-default-sink "$HEADPHONES"
+  fi
+}
+bind -x '"\C-o": swap_audio_output'
