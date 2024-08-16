@@ -131,7 +131,7 @@ focus_follows_mouse no
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
     # Play/pause the current video no matter where you are
-    bindsym $mod+Shift+Control+Space exec playerctl play-pause
+    bindsym $mod+Space exec playerctl play-pause
 #
 # Moving around:
 #
@@ -207,9 +207,6 @@ focus_follows_mouse no
 
     # Toggle the current focus between tiling and floating mode
     bindsym $mod+Shift+space floating toggle
-
-    # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
