@@ -132,6 +132,9 @@ focus_follows_mouse no
 
     # Play/pause the current video no matter where you are
     bindsym $mod+Space exec playerctl play-pause
+    
+    # Screenshot tool
+    bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
 #
 # Moving around:
 #
