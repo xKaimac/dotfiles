@@ -47,7 +47,7 @@ To use these dotfiles:
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/dotfiles.git
+   git clone https://github.com/xKaimac/dotfiles.git
    ```
 2. Navigate to the cloned directory:
    ```
