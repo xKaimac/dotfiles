@@ -1,0 +1,11 @@
+[Unit]
+Description=wlsunset blue light filter
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/wlsunset -l -34.9285 -L 138.6007 -T 6500 -t 3000
+Restart=always
+
+[Install]
+
+WantedBy=graphical-session.target
