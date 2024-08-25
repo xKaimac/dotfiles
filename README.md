@@ -34,6 +34,7 @@ Detailed documentation for each configuration can be found in the following file
 - [Tmux Configuration](./docs/tmux.md)
 - [Waybar Configuration](./docs/waybar.md)
 - [Wofi Configuration](./docs/wofi.md)
+- [WLSunset Configuration](./docs/wlsunset.md)
 
 Each of these files contains information about the relevant configurations.
 
