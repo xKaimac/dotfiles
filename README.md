@@ -1,7 +1,5 @@
 # Dotfiles
 
-This repo contains configuration files for various tools and applications I use in my Linux environment. These dotfiles are tailored to create a pretty minimal and efficient desktop experience.
-
 ## Table of Contents
 
 1. [Overview](#overview)
@@ -11,7 +9,7 @@ This repo contains configuration files for various tools and applications I use 
 
 ## Overview
 
-This dotfiles repository is designed for a Linux environment, specifically tailored for:
+This dotfiles repo has my config for:
 
 - Sway window manager
 - Waybar status bar
